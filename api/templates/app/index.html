@@ -1,0 +1,40 @@
+{% extends "app/layout.html" %} {% block body %}
+    <body>
+        <form action="{% url 'storage' %}", method='post'>
+            {% csrf_token %}
+            <input type='text' name='name'>
+            <input type='submit' value='submit'>
+        </form>
+        <ol>
+            {% for ingredient in Storage %}
+                <li> {{ ingredient }} </li>
+            {% endfor %}
+        <ol>
+        <h2> Add ingredient </h2>
+        <form action="{% url 'additem' %}", method='post'>
+            {% csrf_token %}
+            <input type='text' name='name'>
+            <input type='text' name='ingredients'>
+            <input type='number' name='quantity' placeholder='quantity'>
+            <input type='submit' value='submit'>
+        </form>
+        <h2> Remove ingredient </h2>
+        <div>
+            {% if message != '' %}
+                {{ message }}
+                <ol>
+                    {% for ingredient in ingredient_needed %}
+                        <li> {{ ingredient }} </li>
+                    {% endfor %}
+                <ol>
+            {% endif %}
+        </div>
+        <form action="{% url 'subitem' %}", method='post'>
+            {% csrf_token %}
+            <input type='text' name='name'>
+            <input type='text' name='ingredients'>
+            <input type='number' name='quantity' placeholder='quantity'>
+            <input type='submit' value='submit'>
+        </form>
+    </body>
+{% endblock %}
