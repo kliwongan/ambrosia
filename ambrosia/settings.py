@@ -25,7 +25,7 @@ SECRET_KEY = '@br=2tjolt1p=&0qg$0afg*$)tqf2%=jwevc*)fj=50o)m2%7r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['keanuliwongan.com', 'theambrosia.tech']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'api.apps.ApiConfig',
+    'api',
 ]
 
 MIDDLEWARE = [
