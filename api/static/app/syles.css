@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #14213d;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #11061e;
+}
+
+p {
+  color: white;
+  font-size: 30px;
+}
+
+.ambrosia {
+  color: #73fcfc;
+  font-size: 60px;
+  text-align: center;
+  padding: 4rem 0 3rem 0;
+}
+
+.add-receipt {
+  position: absolute;
+  width: fit-content;
+  left: 38px;
+  top: 38px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.add-receipt p {
+  font-size: 30px;
+  margin-left: 2rem;
+  width: 152px;
+}
+
+.food-wrapper {
+  margin: auto;
+  max-width: 66rem;
+  max-height: 69vh;
+  padding-left: 3rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.food-wrapper > div {
+  display: inline-block;
+}
+
+.item-food {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.item-food div {
+  display: flex;
+  align-items: center;
+  background-color: #101b32;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.item-food div > div {
+  background-color: #14213d;
+  padding: 1.8rem;
+}
+
+.item-food div p,
+.item-food > img {
+  margin: 0 2.6rem;
+}
+
+.item-food > div > p {
+  color: #41caf5;
+}
+
+.plus-wrapper {
+  width: 393px;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+}
+
+.plus > img {
+  padding: 0.4rem 0;
+}
+
+.continue-wrap {
+  width: min-content;
+  margin: 3rem auto 1rem auto;
+}
+
+.continue {
+  display: inline-block;
+}
+
+.continue h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.continue div {
+  background-color: #14213d;
+  border-radius: 20px;
+  width: 100%;
+  height: 12px;
+}
